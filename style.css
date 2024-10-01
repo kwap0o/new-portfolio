@@ -1,0 +1,429 @@
+* {
+  margin: 0;
+  padding: 0;
+  float: none;
+  position: static;
+}
+
+.header {
+  height: 80px;
+  width: 100%;
+  background-color: rgba(101, 143, 18, 0.807);
+  color: white;
+  display: flex;
+  align-items: center;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  position: static;
+}
+.nick_name {
+  padding: 30px;
+  font-size: 36px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold",
+    sans-serif "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  cursor: default;
+}
+.header ul {
+  display: flex;
+  justify-content: space-around;
+  width: 60%;
+  margin-left: auto;
+}
+
+.header ul li {
+  list-style: none;
+  font-size: 26px;
+}
+
+.header ul li a {
+  color: white;
+  text-decoration: none;
+  position: relative;
+}
+.header ul li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  height: 10px;
+  width: 0;
+  border-radius: 5px;
+  background-color: rgb(130, 178, 35);
+  transition: width 0.3s ease-in-out;
+}
+.header ul li a:hover::after {
+  width: 100%;
+}
+
+.header ul li a:hover {
+  transition: all ease-in-out 0.3s;
+  color: rgba(0, 0, 0, 0.488);
+}
+
+.about_me {
+  width: 100%;
+  height: 600px;
+  background-color: rgba(127, 127, 127, 0.117);
+  display: flex;
+  align-items: center;
+}
+
+.about_me_photo {
+  width: 50%;
+  padding: 25px;
+  max-height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about_me_photo img {
+  width: 100%;
+  max-height: 500px;
+  min-height: 200px;
+  border-radius: 10px;
+  max-width: 50%;
+  min-width: 200px;
+}
+
+.about_me_text {
+  width: 50%;
+  padding: 25px;
+  margin-right: 50px;
+}
+
+.abaut_me_text span {
+  font-size: 54px;
+}
+#UpToday {
+  text-decoration: underline;
+  color: rgb(130, 178, 35);
+}
+
+.CV {
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(https://cdn.pixabay.com/photo/2024/04/12/18/18/ai-generated-8692405_1280.jpg);
+  background-attachment: fixed;
+}
+
+.CV_download {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 14px;
+  height: 50px;
+  width: 320px;
+  opacity: 0.8;
+  color: black;
+  font-size: 40px;
+}
+
+.portfolio {
+  height: auto;
+  background-color: rgba(127, 127, 127, 0.117);
+}
+
+.examples {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 30px;
+  padding: 10px;
+}
+
+.examples img {
+  border-radius: 2px;
+  max-width: 100%;
+  max-height: 90%;
+  min-height: 80%;
+  transition: all ease-in-out 0.3s;
+}
+.examples img:hover {
+  transform: scale(1.14);
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.example_1,
+.example_2,
+.example_3,
+.example_4,
+.example_5 {
+  border: 2px rgb(130, 178, 35) solid;
+  border-radius: 5px;
+  margin: 30px;
+  padding: 10px;
+  height: 200px;
+  width: 170px;
+}
+
+.sushi {
+  height: auto;
+}
+.sushi img {
+  width: 100%;
+  height: 60%;
+  opacity: 70%;
+  max-height: 600px;
+}
+.sushi p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 800;
+  padding: 40px;
+}
+.sushi_columns {
+  display: flex;
+  flex-direction: row;
+}
+.sushi_columns p {
+  font-size: 30px;
+  padding: 20px;
+  margin-left: 10px;
+}
+.sushi_columns ul li {
+  margin-bottom: 10px;
+  padding: 10px;
+  list-style: none;
+}
+.sushi_columns ul li:hover {
+  background-color: rgba(130, 178, 35, 0.285);
+  border-radius: 15px;
+}
+
+.menu_button {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: rgba(101, 143, 18, 0.629);
+  position: fixed;
+  top: 80%;
+  left: 90%;
+}
+
+.line_1 {
+  display: block;
+  position: relative;
+  border: 3px solid white;
+  transform: rotateX(45deg);
+  width: 20px;
+  top: 8px;
+  left: 15px;
+  border-radius: 20px;
+}
+.line_2 {
+  display: block;
+  position: relative;
+  border: 3px solid white;
+  transform: rotateX(45deg);
+  width: 35px;
+  top: 16px;
+  left: 8px;
+  border-radius: 20px;
+}
+.line_3 {
+  display: block;
+  position: relative;
+  border: 3px solid white;
+  transform: rotateX(45deg);
+  width: 20px;
+  top: 24px;
+  left: 15px;
+  border-radius: 20px;
+}
+
+.menu_small {
+  background-color: rgb(107, 137, 47);
+  position: relative;
+  top: -150px;
+  left: -100px;
+  width: 150px;
+  height: 200px;
+  border-radius: 25px;
+  display: none;
+}
+
+.menu_small ul li {
+  margin-top: 5px;
+  list-style: none;
+  color: black;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  cursor: pointer;
+  border: 3px black solid;
+  padding: 1px;
+}
+footer {
+  display: flex !important;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: white;
+}
+.copyright {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.copyright p {
+  font-size: 12px;
+  font-weight: 600;
+  color: black;
+}
+.contact {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.contact a {
+  color: black;
+  font-size: 15px;
+  font-weight: 500;
+}
+.contact a:hover {
+  color: black;
+}
+
+.socials {
+  display: flex;
+}
+.socials button {
+  border: none;
+  background-color: white;
+}
+.icon-facebook-squared {
+  font-size: 44px;
+  color: rgb(24, 119, 242);
+}
+.icon-facebook-squared :hover {
+  transition: all ease-in-out 0.25s;
+  color: red;
+}
+
+.icon-instagram {
+  font-size: 44px;
+  background-image: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.icon-github-squared {
+  font-size: 44px;
+  color: blueviolet;
+}
+
+@media screen and (max-width: 600px) {
+  .header ul li {
+    font-size: 18px;
+  }
+  .about_me_text h1 {
+    font-size: 20px;
+  }
+  .about_me_text span {
+    font-size: 12px;
+  }
+  .CV_download {
+    height: 40px;
+    width: 200px;
+    font-size: 20px;
+  }
+  .sushi img {
+    height: 300px;
+  }
+  .sushi_columns {
+    display: block;
+  }
+  .sushi_columns p {
+    font-size: 20px;
+  }
+  .sushi_columns ul li {
+    font-size: 14px;
+  }
+
+  .menu_button {
+    width: 40px;
+    height: 40px;
+    display: absolute;
+    bottom: 50px;
+  }
+  .line_1 {
+    top: 6px;
+    left: 10px;
+    width: 20px;
+    border: 3px white solid;
+  }
+  .line_2 {
+    top: 11px;
+    left: 10px;
+    width: 20px;
+    border: 3px white solid;
+  }
+  .line_3 {
+    top: 16px;
+    left: 10px;
+    width: 20px;
+    border: 3px white solid;
+  }
+  .footer {
+    font-size: 12px;
+  }
+  .icon-facebook-squared {
+    font-size: 30px;
+  }
+  .icon-instagram {
+    font-size: 30px;
+  }
+  .icon-github-squared {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .about_me {
+    display: block;
+    width: 100%;
+  }
+  .about_me_photo {
+    width: 100%;
+    padding: 25px 0 25px 0;
+  }
+  .about_me_text {
+    width: 100%;
+    height: 100%;
+  }
+  .about_me_text h1 {
+    display: flex;
+    justify-content: center;
+  }
+  .about_me_text span {
+    padding: 5px;
+    font-size: 10px;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 400px) {
+  .header ul li {
+    font-size: 10px;
+  }
+  .about_me {
+    display: block;
+  }
+  .abaut_me_text span {
+    font-size: 5px;
+  }
+}
